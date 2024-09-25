@@ -36,7 +36,7 @@ public class Main {
 }*/
 
 
-import java.util.Random;
+/*import java.util.Random;
 
 public class Main {
 
@@ -50,7 +50,81 @@ public class Main {
         }
 
     }
+}*/
+
+
+/*while1
+
+        11:41
+import java.util.Scanner;
+
+public class NumberChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number;
+
+// Запуск цикла
+        while (true) {
+            System.out.print("Введите число (0 для выхода): ");
+            number = scanner.nextInt();
+
+// Если введен 0, завершить цикл
+            if (number == 0) {
+                System.out.println("Вы ввели 0, программа завершена.");
+                break;
+            }
+
+// Проверка положительное или отрицательное число
+            if (number > 0) {
+                System.out.println("Положительное");
+            } else {
+                System.out.println("Отрицательное");
+            }
+        }
+
+        scanner.close(); // Закрыть сканер после завершения работы программы
+    }
+}*/
+
+/*
+for 2
+
+import java.util.Random;
+
+public class RandomSeries {
+    private static final int SERIES_LENGTH = 50;
+    private static final int MIN_VALUE = -40;
+    private static final int MAX_VALUE = 40;
+
+    public static void main(String[] args) {
+        Random random = new Random();
+        int[] series = new int[SERIES_LENGTH];
+
+// Генерация случайных чисел
+        for (int i = 0; i < SERIES_LENGTH; i++) {
+            series[i] = random.nextInt((MAX_VALUE - MIN_VALUE) + 1) + MIN_VALUE;
+        }
+
+// Определение наибольшего и наименьшего значений
+        int max = series[0];
+        int min = series[0];
+
+        for (int i = 1; i < SERIES_LENGTH; i++) {
+            if (series[i] > max) {
+                max = series[i];
+            }
+            if (series[i] < min) {
+                min = series[i];
+            }
+        }
+
+// Вывод результатов
+        System.out.println("Сгенерированная серия чисел: ");
+        for (int num : series) {
+            System.out.print(num + " ");
+        }
+        System.out.println("\nНаибольшее значение: " + max);
+        System.out.println("Наименьшее значение: " + min);
+    }
 }
-
-
-
+*/
