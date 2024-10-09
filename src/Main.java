@@ -233,3 +233,39 @@ public class Main {
     }
 }
 }*/
+
+/*
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Создаем экземпляр Scanner для считывания данных с клавиатуры
+        Scanner scanner = new Scanner(System.in);
+
+        // Выводим приглашение для ввода трёх положительных чисел
+        System.out.println("Введите три положительных числа для проверки, могут ли они быть сторонами треугольника:");
+
+        // Считываем три числа
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        // Проверяем, могут ли они быть сторонами треугольника
+        boolean result = triangle(a, b, c);
+
+        // Выводим результат проверки
+        if (result) {
+            System.out.println("Числа могут быть сторонами треугольника.");
+        } else {
+            System.out.println("Числа не могут быть сторонами треугольника.");
+        }
+    }
+
+    // Метод triangle(), проверяющий, могут ли три числа быть сторонами треугольника
+    public static boolean triangle(int a, int b, int c) {
+        // Условие неравенства треугольника: сумма любых двух сторон должна быть больше третьей стороны
+        return (a + b > c) && (a + c > b) && (b + c > a);
+    }
+}*/
+
